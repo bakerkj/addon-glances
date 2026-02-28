@@ -22,6 +22,9 @@ RUN \
         py3-six=1.17.0-r0 \
         python3=3.12.12-r0 \
     \
+    && apk add --no-cache \
+        smartmontools \
+    \
     && pip3 install -r /tmp/requirements.txt \
     \
     && find /usr/local \
